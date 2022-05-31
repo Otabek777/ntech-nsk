@@ -28,6 +28,7 @@
         </button>
         <button class="center_btn" id="search-btn">
             <img src="img/Button.png" alt="">
+            <img src="img/Button-green.png" alt="" class="green">
         </button>
         <button class="btn" id="catalog-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
@@ -760,6 +761,53 @@
                         </div>
                     </a>
                 </div>
+                <div class="categories__slider">
+                    <div class="categories__slider_wrap">
+                        <a href="#" class="categories__item">
+                            <div class="img">
+                                <img src="img/1.png" alt="">
+                            </div>
+                            <h5 class="title">
+                                Микросхемы
+                            </h5>
+                            <div class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M0.843114 0.408716C0.481006 0.768789 0.481006 1.34568 0.843114 1.70575L7.17294 8L0.843114 14.2942C0.481007 14.6543 0.481006 15.2312 0.843113 15.5913L0.975431 15.7229C1.34704 16.0924 1.95687 16.0924 2.32848 15.7229L9.44281 8.64852C9.80492 8.28844 9.80492 7.71155 9.44281 7.35148L2.32848 0.277142C1.95687 -0.092381 1.34704 -0.0923807 0.975431 0.277143L0.843114 0.408716Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories__slider_wrap">
+                        <a href="#" class="categories__item">
+                            <div class="img">
+                                <img src="img/2.png" alt="">
+                            </div>
+                            <h5 class="title">
+                                Конденсаторы
+                            </h5>
+                            <div class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M0.843114 0.408716C0.481006 0.768789 0.481006 1.34568 0.843114 1.70575L7.17294 8L0.843114 14.2942C0.481007 14.6543 0.481006 15.2312 0.843113 15.5913L0.975431 15.7229C1.34704 16.0924 1.95687 16.0924 2.32848 15.7229L9.44281 8.64852C9.80492 8.28844 9.80492 7.71155 9.44281 7.35148L2.32848 0.277142C1.95687 -0.092381 1.34704 -0.0923807 0.975431 0.277143L0.843114 0.408716Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories__slider_wrap">
+                        <a href="#" class="categories__item">
+                            <div class="img">
+                                <img src="img/3.png" alt="">
+                            </div>
+                            <h5 class="title">
+                                Резисторы
+                            </h5>
+                            <div class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M0.843114 0.408716C0.481006 0.768789 0.481006 1.34568 0.843114 1.70575L7.17294 8L0.843114 14.2942C0.481007 14.6543 0.481006 15.2312 0.843113 15.5913L0.975431 15.7229C1.34704 16.0924 1.95687 16.0924 2.32848 15.7229L9.44281 8.64852C9.80492 8.28844 9.80492 7.71155 9.44281 7.35148L2.32848 0.277142C1.95687 -0.092381 1.34704 -0.0923807 0.975431 0.277143L0.843114 0.408716Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </section>
             <section class="about">
                 <h2 class="title_h2">О нас</h2>
@@ -1006,6 +1054,13 @@
             slidesToScroll: 1,
             arrows: false,
             dots: false
+        });
+        $('.categories__slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true
         });
     </script>
 </body>
